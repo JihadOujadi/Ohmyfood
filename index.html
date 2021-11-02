@@ -8,21 +8,36 @@
     />
     <link rel="stylesheet" href="css/normalise.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/df7c7f1f22.js" crossorigin="anonymous"></script>
     <title>Réservez le menu qui vous convient</title>
   </head>
   <body>
+    <!--début header-->
     <header>
-      <img class="logo" alt="ohmyfood" />
+      <img class="logo" src="assets/logo/ohmyfood.png" alt="ohmyfood" />
     </header>
+    <!--Fin header-->
+    <!--Début section du haut-->
     <section class="section-top">
       <div class="localisation">
-        <i></i>
-        <p></p>
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Paris, Belleville</p>
       </div>
-      <h2>Réservez le menu qui vous convient</h2>
-      <p>Découvres des restaurants d'exception, sélectionnés par nos soins</p>
-      <a href="#" class="btn btn-cta">Explorer nos restaurants</a>
+      <div class="recherche">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <a href="#" class="btn btn-cta">Explorer nos restaurants</a>
+      </div>
     </section>
+    <!--Fin section du haut-->
+    <!--Début section Fonctionnement-->
     <section class="section-middle">
       <h3>Fonctionnement</h3>
       <div class="cta cta-resto">
@@ -41,17 +56,21 @@
         <p>Dégustez au restaurant</p>
       </div>
     </section>
+    <!--Fin section Fonctionnement-->
+    <!--Début section choix restaurant-->
     <main class="section-bottom">
       <h3>Restaurants</h3>
       <div class="liste-resto">
         <article class="card">
           <a href="palettedugout.html">
             <figure>
-              <img class="img-card" alt="La palette du goût"/>
+              <img class="img-card" alt="La palette du goût" />
               <p class="nouveau">Nouveau</p>
             </figure>
             <div class="contenu">
-              <p class="title-card"><strong>La palette du goût</strong><br>Ménilmontant</p>
+              <p class="title-card">
+                <strong>La palette du goût</strong><br />Ménilmontant
+              </p>
               <i></i>
             </div>
           </a>
@@ -95,6 +114,8 @@
         </article>
       </div>
     </main>
+    <!--Fin section choix restaurant-->
+    <!--Début Footer-->
     <footer>
       <h4 class="logo-footer">ohmyfood</h4>
       <div>
@@ -116,5 +137,6 @@
         </ul>
       </div>
     </footer>
+    <!--Fin Footer-->
   </body>
 </html>
