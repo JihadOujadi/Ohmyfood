@@ -3,10 +3,6 @@
           box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-}
-
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -112,4 +108,55 @@ header img {
 .section-top .recherche .btn-cta {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+}
+
+.section-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  margin-left: 20px;
+}
+.section-middle h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+}
+.section-middle .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+.section-middle .cta-resto, .section-middle .cta-menu, .section-middle .cta-repas {
+  background-color: #f6f6f6;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 15px;
+}
+.section-middle .fct {
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 9px;
+  position: absolute;
+  left: 20px;
+  font-size: 15px;
+}
+.section-middle .fa-mobile-alt {
+  margin-left: 23px;
+  margin-right: 25px;
+  font-size: 23px;
+  color: grey;
+}
+.section-middle p {
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */

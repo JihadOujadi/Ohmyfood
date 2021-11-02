@@ -1,9 +1,6 @@
 *{
     box-sizing: border-box;
 }
-body{
-    width: 100%;
-}
 p{
     font-family: 'Roboto', sans-serif;
 }
@@ -73,5 +70,46 @@ header{
             color: #ffffff;
             font-family: 'Roboto', sans-serif;
         }
+    }
+}
+.section-middle{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-left: 20px;
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+    }
+    .cta{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+    }
+    .cta-resto, .cta-menu, .cta-repas{
+        background-color: #f6f6f6;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-left: 15px;
+    }
+    .fct{
+        background-color: #9356DC;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px 9px;
+        position: absolute;
+        left: 20px;
+        font-size: 15px;
+    }
+    .fa-mobile-alt{
+        margin-left: 23px;
+        margin-right: 25px;
+        font-size: 23px;
+        color: grey;
+    }
+    p{
+        font-size: 18px;
     }
 }
