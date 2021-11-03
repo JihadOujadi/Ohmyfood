@@ -225,15 +225,22 @@ header img {
 }
 .section-bottom figure {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.section-bottom .nouveau {
+.section-bottom figure .nouveau {
   background-color: #99E2D0;
   color: green;
   width: 20%;
   text-align: center;
   padding: 5px;
   position: absolute;
-  left: 70%;
+  left: 71%;
 }
 .section-bottom .contenu {
   display: -webkit-box;

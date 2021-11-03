@@ -159,15 +159,17 @@ $text: #000000;
       }
       figure {
         margin: 0;
-      }
-      .nouveau{
-          background-color: $new;
-          color: green;
-          width: 20%;
-          text-align: center;
-          padding: 5px;
-          position: absolute;
-          left: 70%;
+        display: flex;
+        flex-direction: column;
+        .nouveau{
+            background-color: $new;
+            color: green;
+            width: 20%;
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            left: 71%;
+        }
       }
       .contenu{
         display: flex;
@@ -188,3 +190,4 @@ $text: #000000;
       }
      
 }
+
