@@ -8,21 +8,38 @@
     />
     <link rel="stylesheet" href="css/normalise.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/df7c7f1f22.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Réservez le menu qui vous convient</title>
   </head>
   <body>
     <header>
-        <img class="logo" alt="ohmyfood">
+      <img class="logo" src="assets/logo/ohmyfood.png" alt="ohmyfood" />
       </header>
-      <main>
+      <main class="carte-resto">
         <div class="img-background">
           <img
             src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
             alt="`À la française"
           />
         </div>
-        <section>
-          <h1>À la française</h1>
+        <section class="carte-menu">
+          <div class="carte-title">
+            <h1>Le délice des sens</h1>
+            <i class="far fa-heart"></i>
+          </div>
           <div class="entree">
             <p>Entrées</p>
             <article class="menu-card">
@@ -82,16 +99,16 @@
           </span>
         </section>
       </main>
-    <footer>
+      <footer>
         <h4 class="logo-footer">ohmyfood</h4>
         <div>
           <ul>
             <li>
-              <i></i>
+              <i class="fas fa-utensils"></i>
               <a href="#">Proposer un restaurant</a>
             </li>
             <li>
-              <i></i>
+              <i class="fas fa-hands-helping"></i>
               <a href="#">Devenir partenaire</a>
             </li>
             <li>
@@ -102,6 +119,6 @@
             </li>
           </ul>
         </div>
-            </footer>
+      </footer>
   </body>
 </html>
