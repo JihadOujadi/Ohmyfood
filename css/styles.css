@@ -59,7 +59,7 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eeeeee;
+  background-color: #f6f6f6;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
@@ -99,14 +99,18 @@ header img {
   text-align: center;
   font-weight: 100;
 }
-.section-top .recherche .btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   padding: 15px;
   border-radius: 30px;
   margin-top: 30px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.section-top .recherche .btn-cta {
+
+.btn-cta {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
@@ -137,7 +141,9 @@ header img {
   width: 100%;
   max-width: 450px;
 }
-.section-middle .cta-resto, .section-middle .cta-menu, .section-middle .cta-repas {
+.section-middle .cta-resto,
+.section-middle .cta-menu,
+.section-middle .cta-repas {
   background-color: #f6f6f6;
   margin-bottom: 15px;
   border-radius: 15px;
@@ -149,14 +155,24 @@ header img {
   -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
 }
-.section-middle .cta-resto:hover, .section-middle .cta-menu:hover, .section-middle .cta-repas:hover {
+.section-middle .cta-resto:hover,
+.section-middle .cta-menu:hover,
+.section-middle .cta-repas:hover {
   background-color: #e9ddf8;
 }
-.section-middle .cta-resto:hover .fa-mobile-alt, .section-middle .cta-resto:hover .fa-list-ul, .section-middle .cta-resto:hover .fa-store, .section-middle .cta-menu:hover .fa-mobile-alt, .section-middle .cta-menu:hover .fa-list-ul, .section-middle .cta-menu:hover .fa-store, .section-middle .cta-repas:hover .fa-mobile-alt, .section-middle .cta-repas:hover .fa-list-ul, .section-middle .cta-repas:hover .fa-store {
-  color: #9356DC;
+.section-middle .cta-resto:hover .fa-mobile-alt,
+.section-middle .cta-resto:hover .fa-list-ul,
+.section-middle .cta-resto:hover .fa-store,
+.section-middle .cta-menu:hover .fa-mobile-alt,
+.section-middle .cta-menu:hover .fa-list-ul,
+.section-middle .cta-menu:hover .fa-store,
+.section-middle .cta-repas:hover .fa-mobile-alt,
+.section-middle .cta-repas:hover .fa-list-ul,
+.section-middle .cta-repas:hover .fa-store {
+  color: #9356dc;
 }
 .section-middle .fct {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: #fff;
   border-radius: 50%;
   padding: 5px 9px;
@@ -164,7 +180,9 @@ header img {
   left: -3px;
   font-size: 15px;
 }
-.section-middle .fa-mobile-alt, .section-middle .fa-list-ul, .section-middle .fa-store {
+.section-middle .fa-mobile-alt,
+.section-middle .fa-list-ul,
+.section-middle .fa-store {
   margin-left: 30px;
   color: grey;
 }
@@ -190,7 +208,7 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   padding: 25px 20px;
 }
 .section-bottom .liste-resto {
@@ -241,16 +259,6 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-bottom figure {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 .section-bottom .contenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,14 +289,19 @@ header img {
   margin-right: 15px;
 }
 
+figure {
+  margin: 0;
+}
+
 .nouveau {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: green;
   width: 20%;
   text-align: center;
   padding: 5px;
   position: absolute;
   left: 71%;
+  margin-top: -230px;
 }
 
 footer {
@@ -315,8 +328,9 @@ footer li a {
   font-family: "Roboto", sans-serif;
   line-height: 27px;
 }
-footer li .fa-utensils, footer li .fa-hands-helping {
-  color: #FFF;
+footer li .fa-utensils,
+footer li .fa-hands-helping {
+  color: #fff;
 }
 footer .fa-utensils {
   font-size: 15px;
@@ -343,27 +357,51 @@ footer li:first-child a {
   padding-top: 200px;
 }
 .carte-resto .carte-menu {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  background-color: #f6f6f6;
+  padding: 10px 0 30px 20px;
 }
-.carte-resto .carte-menu h1 {
-  font-family: "Shrikhand", sans-serif;
+.carte-resto .carte-menu .btn-cta {
+  padding: 15px 40px;
 }
-.carte-resto .carte-title {
+
+.bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.carte-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f2f2f2;
-  padding: 40px 20px 40px 20px;
-  border-radius: 35px 35px 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  padding: 40px 30px 0px 30px;
+  border-radius: 40px 40px 0 0;
+}
+.carte-title h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+.carte-title .fa-heart {
+  font-size: 25px;
 }
 
+.titre-menu {
+  padding-left: 10px;
+}
 .titre-menu .title-line {
   display: block;
-  border: 2px solid #99E2D0;
+  border: 2px solid #99e2d0;
   width: 9%;
   margin-top: -10px;
   padding: 0;
@@ -372,4 +410,44 @@ footer li:first-child a {
 .titre-menu > p {
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+  margin-top: 15px;
+  padding: 5px 3px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.menu-card p {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.titre-plats {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 300;
+}
+
+.menu-content p:last-child {
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
