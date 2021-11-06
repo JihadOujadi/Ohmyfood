@@ -194,6 +194,7 @@ header {
     }
     span {
       font-weight: 700;
+      font-size: 17px;
     }
     p {
       font-weight: 300;
@@ -249,6 +250,9 @@ footer {
       color: #fff;
     }
   }
+  li:hover > *{
+    color: $new;
+}
   .fa-utensils {
     font-size: 15px;
     margin-right: 3px;
@@ -264,13 +268,38 @@ footer {
     margin-left: 5px;
   }
 }
-.resto-palette {
-  background-image: url(https://jihadoujadi.github.io/jihadoujadi_3_29102021/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 100% auto;
+.header-resto{
+    display: flex;
+    align-content: center;
+}
+.fa-arrow-left{
+    color: $text;
+    font-size: 18px;
+    margin-right: 130px;
+    margin-left: 30px;
+}
+.resto-francais {
+  background-image: url(../assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+.resto-palette{
+    background-image: url(../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.resto-enchantee{
+    background-image: url(../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.resto-sens{
+    background-image: url(../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .carte-resto {
-  padding-top: 200px;
+  padding-top: 250px;
   .carte-menu {
     background-color: $background;
     padding: 10px 0 30px 20px;
@@ -301,6 +330,7 @@ footer {
 }
 .titre-menu {
     padding-left: 10px;
+    margin-top: 50px;
   .title-line {
     display: block;
     border: 2px solid $new;
