@@ -177,13 +177,13 @@ header img {
   border-radius: 50%;
   padding: 5px 9px;
   position: absolute;
-  left: -3px;
+  left: -10px;
   font-size: 15px;
 }
 .section-middle .fa-mobile-alt,
 .section-middle .fa-list-ul,
 .section-middle .fa-store {
-  margin-left: 30px;
+  margin-left: 40px;
   color: grey;
 }
 .section-middle .fa-mobile-alt {
@@ -197,7 +197,7 @@ header img {
 }
 .section-middle p {
   font-size: 18px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .section-bottom {
@@ -230,7 +230,7 @@ header img {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
 }
-.section-bottom .card {
+.section-bottom .card a {
   background-color: #ffffff;
   width: 100%;
   max-width: 450px;
@@ -247,9 +247,12 @@ header img {
   -webkit-box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
 }
-.section-bottom .card:hover {
+.section-bottom a:hover {
   -webkit-transform: scaleX(1.03) scaleY(1.03);
           transform: scaleX(1.03) scaleY(1.03);
+}
+.section-bottom a:hover span {
+  color: #9356dc;
 }
 .section-bottom .card .img-card {
   width: 100%;
@@ -277,6 +280,8 @@ header img {
 .section-bottom .contenu span {
   font-weight: 700;
   font-size: 17px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 .section-bottom .contenu p {
   font-weight: 300;
@@ -301,7 +306,7 @@ figure {
   text-align: center;
   padding: 5px;
   position: absolute;
-  left: 71%;
+  left: 355px;
   margin-top: -230px;
 }
 
@@ -362,7 +367,7 @@ footer li:first-child a {
 .fa-arrow-left {
   color: #000000;
   font-size: 18px;
-  margin-right: 130px;
+  margin-right: 129px;
   margin-left: 30px;
 }
 
