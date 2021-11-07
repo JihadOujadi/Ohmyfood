@@ -101,13 +101,22 @@ header img {
 }
 
 .btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9256dc));
+  background: linear-gradient(#ff79da, #9256dc);
   padding: 15px;
   border-radius: 30px;
   margin-top: 30px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f390d7), to(#a57ed4));
+  background: linear-gradient(#f390d7, #a57ed4);
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn-cta {
@@ -169,10 +178,10 @@ header img {
 .section-middle .cta-repas:hover .fa-mobile-alt,
 .section-middle .cta-repas:hover .fa-list-ul,
 .section-middle .cta-repas:hover .fa-store {
-  color: #9356dc;
+  color: #9256dc;
 }
 .section-middle .fct {
-  background-color: #9356dc;
+  background-color: #9256dc;
   color: #fff;
   border-radius: 50%;
   padding: 5px 9px;
@@ -252,7 +261,7 @@ header img {
           transform: scaleX(1.03) scaleY(1.03);
 }
 .section-bottom a:hover span {
-  color: #9356dc;
+  color: #9256dc;
 }
 .section-bottom .card .img-card {
   width: 100%;
@@ -333,6 +342,8 @@ footer li a {
   color: #fff;
   font-family: "Roboto", sans-serif;
   line-height: 27px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 footer li .fa-utensils,
 footer li .fa-hands-helping {
