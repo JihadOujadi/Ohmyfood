@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -253,8 +254,14 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   -webkit-box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+}
+.section-bottom .card a .far:hover {
+  color: #9256dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9256dc));
+  background: linear-gradient(#ff79da, #9256dc);
 }
 .section-bottom a:hover {
   -webkit-transform: scaleX(1.03) scaleY(1.03);
@@ -296,12 +303,11 @@ header img {
   font-weight: 300;
 }
 .section-bottom .contenu .far {
-  color: #000000;
-}
-.section-bottom .contenu .fa-heart {
   font-size: 25px;
   margin-top: 10px;
   margin-right: 15px;
+  color: #000000;
+  background: transparent;
 }
 
 figure {
@@ -447,6 +453,7 @@ footer li:first-child a {
 }
 .carte-title .fa-heart {
   font-size: 25px;
+  font-weight: 300;
 }
 
 .titre-menu {
@@ -481,10 +488,49 @@ footer li:first-child a {
   padding: 5px 3px;
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
 }
 .menu-card p {
   margin: 0;
   padding: 5px 10px;
+}
+.menu-card .fa-check-circle {
+  color: #fff;
+  font-size: 35px;
+}
+
+.menu-card__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  border-radius: 0 15px 15px 0;
+  -webkit-transform: translateX(85px);
+          transform: translateX(85px);
+  -webkit-transition: 400ms 50ms ease-in-out;
+  transition: 400ms 50ms ease-in-out;
+}
+
+.menu-card:hover .menu-card__check {
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+}
+
+.menu-card:hover .menu-content {
+  width: 85%;
 }
 
 .titre-plats {
@@ -499,9 +545,97 @@ footer li:first-child a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   font-weight: 300;
+  -webkit-transition: 400ms 150ms;
+  transition: 400ms 150ms;
 }
 
 .menu-content p:last-child {
   font-weight: 700;
+}
+
+.entree {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+.entree .menu-card {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation: FadeInBottom 1.3s both;
+          animation: FadeInBottom 1.3s both;
+}
+.entree .menu-card:nth-child(2) {
+  -webkit-animation: FadeInBottom 1s both;
+          animation: FadeInBottom 1s both;
+}
+.entree .menu-card:last-child {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation: FadeInBottom 1.6s both;
+          animation: FadeInBottom 1.6s both;
+}
+
+.plats {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+.plats .menu-card {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation: FadeInBottom 1.3s both;
+          animation: FadeInBottom 1.3s both;
+}
+.plats .menu-card:nth-child(2) {
+  -webkit-animation: FadeInBottom 1s both;
+          animation: FadeInBottom 1s both;
+}
+.plats .menu-card:last-child {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation: FadeInBottom 1.6s both;
+          animation: FadeInBottom 1.6s both;
+}
+
+.desserts {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+.desserts .menu-card {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation: FadeInBottom 1.3s both;
+          animation: FadeInBottom 1.3s both;
+}
+.desserts .menu-card:nth-child(2) {
+  -webkit-animation: FadeInBottom 1s both;
+          animation: FadeInBottom 1s both;
+}
+.desserts .menu-card:last-child {
+  -webkit-animation-delay: §00ms;
+          animation-delay: §00ms;
+  -webkit-animation: FadeInBottom 1.6s both;
+          animation: FadeInBottom 1.6s both;
+}
+
+@-webkit-keyframes FadeInBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeInBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */
