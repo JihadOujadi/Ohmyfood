@@ -368,7 +368,7 @@ header .logo__resto {
   font-weight: 300;
 }
 .section-bottom .contenu svg {
-  width: 10%;
+  width: 7%;
   overflow: visible;
 }
 .section-bottom .contenu .fa-heart-main path {
@@ -743,6 +743,10 @@ footer li:first-child a {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+
+  .section-bottom .contenu svg {
+    width: 10%;
   }
 
   .nouveau {

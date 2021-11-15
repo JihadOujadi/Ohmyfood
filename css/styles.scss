@@ -260,7 +260,7 @@ header {
       font-weight: 300;
     }
     svg {
-      width: 10%;
+      width: 7%;
       overflow: visible;
     }
     .fa-heart-main {
@@ -552,6 +552,14 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .section-bottom{
+    .contenu{
+      svg{
+        width: 10%;
+      }
+    }
+  }
+  
   .nouveau {
     width: 25%;
     left: 240px;
