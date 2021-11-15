@@ -30,7 +30,7 @@ header {
   -webkit-box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
 }
-header .logo {
+header .logo, header .logo__resto {
   width: 30%;
 }
 
@@ -289,8 +289,6 @@ header .logo {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  -webkit-animation: HoverHeart 0.3s both ease-in-out;
-          animation: HoverHeart 0.3s both ease-in-out;
 }
 .section-bottom .card:hover {
   -webkit-transform: scaleX(1.03) scaleY(1.03);
@@ -334,6 +332,21 @@ header .logo {
 }
 .section-bottom .contenu p {
   font-weight: 300;
+}
+.section-bottom .contenu svg {
+  width: 10%;
+  overflow: visible;
+}
+.section-bottom .contenu .fa-heart-main path {
+  fill: transparent;
+  stroke-width: 25;
+  stroke: #000000;
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+.section-bottom .contenu .fa-heart-main:hover path {
+  -webkit-animation: AnimateHeartFirst 2s ease-in-out forwards;
+          animation: AnimateHeartFirst 2s ease-in-out forwards;
 }
 
 figure {
@@ -656,7 +669,11 @@ footer li:first-child a {
 
 @media screen and (min-width: 992px) {
   header .logo {
-    width: 20%;
+    width: 15%;
+  }
+
+  .header-resto .logo__resto {
+    width: 38%;
   }
 
   .section-middle .section-middle__fonction {
@@ -766,23 +783,61 @@ footer li:first-child a {
     opacity: 1;
   }
 }
-@-webkit-keyframes HoverHeart {
-  from {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 0;
+@-webkit-keyframes AnimateHeartFirst {
+  0% {
+    stroke-dashoffset: 0;
   }
-  to {
-    opacity: 1;
+  30% {
+    stroke-dashoffset: 1560;
+  }
+  60% {
+    stroke-dashoffset: 3120;
+    stroke: url(#MyGradient);
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: url(#MyGradient);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    stroke: url(#MyGradient);
+    fill: url(#MyGradient);
   }
 }
-@keyframes HoverHeart {
-  from {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 0;
+@keyframes AnimateHeartFirst {
+  0% {
+    stroke-dashoffset: 0;
   }
-  to {
-    opacity: 1;
+  30% {
+    stroke-dashoffset: 1560;
+  }
+  60% {
+    stroke-dashoffset: 3120;
+    stroke: url(#MyGradient);
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: url(#MyGradient);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    stroke: url(#MyGradient);
+    fill: url(#MyGradient);
   }
 }/*# sourceMappingURL=styles.css.map */
