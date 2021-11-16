@@ -589,6 +589,46 @@ footer {
     }
   }
 }
+@media (min-width: 769px) and (max-width: 991px){
+  .section-middle{
+    .section-middle__fonction{
+      align-items: center;
+    }
+    .cta{
+      justify-content: center;
+      align-items: center;
+    }
+    .fct{
+      left: 230px;
+    }
+    .fa-mobile-alt,
+    .fa-list-ul,
+    .fa-store {
+      margin-left: 0;
+    }
+  }
+  .section-bottom{
+    .liste-resto{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .card{
+      width: 45%;
+    }
+  }
+  .nouveau{
+    left: 300px;
+  }
+  footer{
+display: flex;
+justify-content: space-between;
+ul{
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+  }
+}
 
 @keyframes FadeInBottom {
   from {
