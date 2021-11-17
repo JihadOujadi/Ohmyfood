@@ -54,7 +54,7 @@ header .logo__resto {
   -webkit-animation: Loader 0.8s 3.3s ease-out both;
           animation: Loader 0.8s 3.3s ease-out both;
 }
-.spinner h1 {
+.spinner p {
   font-family: "Shrikhand", sans-serif;
   font-size: 70px;
   background: -webkit-linear-gradient(#ff79da, #9256dc);

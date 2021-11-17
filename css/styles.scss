@@ -43,7 +43,7 @@ header {
   z-index: 5;
   opacity: 1;
   animation: Loader 0.8s 3.3s ease-out both;
-  h1 {
+  p {
     font-family: $text-title;
     font-size: 70px;
     background: -webkit-linear-gradient($pink-icon, $purple-icon);
