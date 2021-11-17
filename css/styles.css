@@ -695,8 +695,8 @@ footer li:first-child a {
           animation: FadeInBottom 1s both;
 }
 .desserts .menu-card:last-child {
-  -webkit-animation-delay: §00ms;
-          animation-delay: §00ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation: FadeInBottom 1.6s both;
           animation: FadeInBottom 1.6s both;
 }
