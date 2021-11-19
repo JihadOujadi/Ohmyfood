@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -191,12 +190,12 @@ header .logo__resto {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 30px;
-  margin-left: 20px;
   margin-bottom: 50px;
 }
 .section-middle h3 {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
+  margin-left: 20px;
 }
 .section-middle .section-middle__fonction {
   display: -webkit-box;
@@ -206,6 +205,9 @@ header .logo__resto {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section-middle .cta {
   display: -webkit-box;
@@ -214,8 +216,6 @@ header .logo__resto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  max-width: 450px;
 }
 .section-middle .cta-resto,
 .section-middle .cta-menu,
@@ -224,12 +224,13 @@ header .logo__resto {
   margin-bottom: 15px;
   border-radius: 15px;
   padding: 10px;
-  margin-left: 15px;
   cursor: pointer;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
+  width: 335px;
+  position: relative;
 }
 .section-middle .cta-resto:hover,
 .section-middle .cta-menu:hover,
@@ -253,7 +254,7 @@ header .logo__resto {
   border-radius: 50%;
   padding: 5px 9px;
   position: absolute;
-  left: -10px;
+  left: -42px;
   font-size: 15px;
 }
 .section-middle .fa-mobile-alt,
@@ -295,8 +296,6 @@ header .logo__resto {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 20px;
@@ -305,24 +304,6 @@ header .logo__resto {
 .section-bottom h3 {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
-}
-.section-bottom .card {
-  background-color: #ffffff;
-  width: 100%;
-  max-width: 450px;
-  border-radius: 20px;
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  -webkit-box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
 }
 .section-bottom .card:hover {
   -webkit-transform: scaleX(1.03) scaleY(1.03);
@@ -383,19 +364,31 @@ header .logo__resto {
           animation: AnimateHeartFirst 2s ease-in-out forwards;
 }
 
-figure {
-  margin: 0;
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
 }
 
-.nouveau {
+figure {
+  margin: 0;
+  position: relative;
+}
+figure .nouveau {
   background-color: #99e2d0;
   color: green;
-  width: 20%;
+  width: 22%;
   text-align: center;
   padding: 5px;
   position: absolute;
-  left: 355px;
-  margin-top: -230px;
+  right: 1rem;
+  top: 0;
 }
 
 footer {
@@ -457,7 +450,7 @@ footer li:first-child a {
 .fa-arrow-left {
   color: #000000;
   font-size: 18px;
-  margin-right: 129px;
+  margin-right: 90px;
   margin-left: 30px;
 }
 
@@ -486,7 +479,7 @@ footer li:first-child a {
 }
 
 .carte-resto {
-  padding-top: 250px;
+  padding-top: 196px;
 }
 .carte-resto .carte-menu {
   background-color: #f6f6f6;
@@ -523,10 +516,22 @@ footer li:first-child a {
 }
 .carte-title h1 {
   font-family: "Shrikhand", sans-serif;
-}
-.carte-title .fa-heart {
   font-size: 25px;
-  font-weight: 300;
+}
+.carte-title svg {
+  width: 2%;
+  overflow: visible;
+}
+.carte-title .fa-heart-main path {
+  fill: transparent;
+  stroke-width: 25;
+  stroke: #000000;
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+.carte-title .fa-heart-main:hover path {
+  -webkit-animation: AnimateHeartFirst 2s ease-in-out forwards;
+          animation: AnimateHeartFirst 2s ease-in-out forwards;
 }
 
 .titre-menu {
@@ -536,7 +541,7 @@ footer li:first-child a {
 .titre-menu .title-line {
   display: block;
   border: 2px solid #99e2d0;
-  width: 9%;
+  width: 40px;
   margin-top: -10px;
   padding: 0;
 }
@@ -556,12 +561,15 @@ footer li:first-child a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-right: 20px;
   margin-top: 15px;
   padding: 5px 3px;
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  text-overflow: ellipsis;
   position: relative;
   cursor: pointer;
 }
@@ -615,6 +623,11 @@ footer li:first-child a {
 .menu-card:hover .menu-content {
   width: 85%;
 }
+.menu-card:hover .menu-content p:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .titre-plats {
   font-weight: 700;
@@ -632,6 +645,8 @@ footer li:first-child a {
   font-weight: 300;
   -webkit-transition: 400ms 150ms;
   transition: 400ms 150ms;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-content p:last-child {
@@ -801,7 +816,7 @@ footer li:first-child a {
     margin-right: 30px;
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .section-middle .section-middle__fonction {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -814,9 +829,6 @@ footer li:first-child a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .section-middle .fct {
-    left: 230px;
   }
   .section-middle .fa-mobile-alt,
 .section-middle .fa-list-ul,
@@ -837,6 +849,7 @@ footer li:first-child a {
   }
 
   .nouveau {
+    width: 25%;
     left: 300px;
   }
 
