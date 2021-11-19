@@ -479,7 +479,7 @@ footer li:first-child a {
 }
 
 .carte-resto {
-  padding-top: 196px;
+  padding-top: 215px;
 }
 .carte-resto .carte-menu {
   background-color: #f6f6f6;
@@ -569,13 +569,17 @@ footer li:first-child a {
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-overflow: ellipsis;
   position: relative;
   cursor: pointer;
 }
 .menu-card p {
   margin: 0;
   padding: 5px 10px;
+}
+.menu-card p:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-card .fa-check-circle {
   color: #fff;
@@ -773,6 +777,30 @@ footer li:first-child a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .carte-menu__EPD .menu-card:hover .menu-content {
+    width: 87%;
+  }
+  .carte-menu__EPD .menu-card__check {
+    width: 13%;
+  }
+  .carte-menu__EPD .desserts .menu-card__check {
+    -webkit-transform: translateX(160px);
+            transform: translateX(160px);
+    width: 7%;
+  }
+  .carte-menu__EPD .desserts .menu-card:hover .menu-content {
+    width: 92%;
+  }
+  .carte-menu__EPD .desserts .menu-card:hover .menu-card__check {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  .carte-menu__EPD .desserts .menu-card:hover .menu-card__check i {
+    -webkit-transform: translateX(0) rotate(1turn);
+            transform: translateX(0) rotate(1turn);
   }
 
   .entree,
