@@ -728,7 +728,7 @@ footer li:first-child a {
           animation: FadeInBottom 1.6s both;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
   .section-middle .cta {
     width: 25%;
   }
@@ -828,7 +828,7 @@ footer li:first-child a {
     margin-right: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .fa-arrow-left {
     margin-right: 180px;
   }
