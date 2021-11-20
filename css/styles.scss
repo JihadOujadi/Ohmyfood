@@ -123,10 +123,6 @@ header {
   color: #ffffff;
   font-family: $text-body;
 }
-.container-all {
-  display: flex;
-  flex-direction: column;
-}
 .section-middle {
   display: flex;
   flex-direction: column;
@@ -143,8 +139,9 @@ header {
     align-items: center;
   }
   .cta {
-    display: flex;
-    align-items: center;
+    width: 85%;
+    height: 65px;
+    text-align: center;
   }
   .cta-resto,
   .cta-menu,
@@ -152,12 +149,11 @@ header {
     background-color: $background;
     margin-bottom: 15px;
     border-radius: 15px;
-    padding: 10px;
     cursor: pointer;
     transition: ease-in-out 0.2s;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
-    width: 335px;
     position: relative;
+    padding: 23px 10px 0 30px ;
   }
   .cta-resto:hover,
   .cta-menu:hover,
@@ -175,13 +171,14 @@ header {
     border-radius: 50%;
     padding: 5px 9px;
     position: absolute;
-    left: -42px;
+    left: -14px;
     font-size: 15px;
   }
   .fa-mobile-alt,
   .fa-list-ul,
   .fa-store {
-    margin-left: 40px;
+    position: absolute;
+    left: 35px;
     color: grey;
   }
   .fa-mobile-alt {
@@ -195,7 +192,6 @@ header {
   }
   p {
     font-size: 18px;
-    margin-left: 30px;
   }
 }
 .section-bottom {
@@ -282,7 +278,7 @@ figure {
   .nouveau {
     background-color: $lightgreen;
     color: green;
-    width: 22%;
+    width: 25%;
     text-align: center;
     padding: 5px;
     position: absolute;
@@ -396,7 +392,7 @@ footer {
     font-size: 25px ;
   }
   svg {
-    width: 2%;
+    width: 7%;
     overflow: visible;
   }
   .fa-heart-main {
@@ -547,7 +543,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   header .logo {
     width: 15%;
   }
@@ -566,13 +562,15 @@ footer {
   }
   .section-middle .fct {
     position: relative;
-    left: -54px;
+    left: -100px;
   }
   .section-middle {
     .fa-mobile-alt,
     .fa-list-ul,
     .fa-store {
-      margin-left: 0;
+      margin-left: -40px;
+      position: absolute; 
+      left: 110px;
     }
   }
   .section-bottom .liste-resto {
@@ -589,7 +587,12 @@ footer {
   
   .nouveau {
     width: 25%;
-    left: 240px;
+    right: 10px;
+  }
+  .carte-title{
+    svg{
+      width: 3%
+    }
   }
   .carte-menu__EPD {
     display: flex;
@@ -638,19 +641,31 @@ footer {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 1024px){
   .section-middle{
     .section-middle__fonction{
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+    .cta-resto, .cta-menu, .cta-repas{
+      padding: 23px 10px 0 30px;
     }
     .cta{
       justify-content: center;
       align-items: center;
+      width: 30%;
     }
     .fa-mobile-alt,
     .fa-list-ul,
     .fa-store {
       margin-left: 0;
+      position: absolute; 
+      left: 30px;
+    }
+    .fct{
+      left: -14px;
     }
   }
   .section-bottom{
@@ -664,9 +679,15 @@ footer {
   }
   .nouveau{
     width: 25%;
-    left: 300px;
   }
-  
+  .carte-title{
+    svg{
+      width: 3%
+    }
+  }
+  .entree, .plats, .desserts{
+    width: 33%;
+  }
   footer{
 display: flex;
 justify-content: space-between;

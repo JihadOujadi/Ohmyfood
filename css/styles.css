@@ -171,16 +171,6 @@ header .logo__resto {
   font-family: "Roboto", sans-serif;
 }
 
-.container-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .section-middle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,12 +200,9 @@ header .logo__resto {
           align-items: center;
 }
 .section-middle .cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 85%;
+  height: 65px;
+  text-align: center;
 }
 .section-middle .cta-resto,
 .section-middle .cta-menu,
@@ -223,14 +210,13 @@ header .logo__resto {
   background-color: #f6f6f6;
   margin-bottom: 15px;
   border-radius: 15px;
-  padding: 10px;
   cursor: pointer;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
-  width: 335px;
   position: relative;
+  padding: 23px 10px 0 30px;
 }
 .section-middle .cta-resto:hover,
 .section-middle .cta-menu:hover,
@@ -254,13 +240,14 @@ header .logo__resto {
   border-radius: 50%;
   padding: 5px 9px;
   position: absolute;
-  left: -42px;
+  left: -14px;
   font-size: 15px;
 }
 .section-middle .fa-mobile-alt,
 .section-middle .fa-list-ul,
 .section-middle .fa-store {
-  margin-left: 40px;
+  position: absolute;
+  left: 35px;
   color: grey;
 }
 .section-middle .fa-mobile-alt {
@@ -274,7 +261,6 @@ header .logo__resto {
 }
 .section-middle p {
   font-size: 18px;
-  margin-left: 30px;
 }
 
 .section-bottom {
@@ -383,7 +369,7 @@ figure {
 figure .nouveau {
   background-color: #99e2d0;
   color: green;
-  width: 22%;
+  width: 25%;
   text-align: center;
   padding: 5px;
   position: absolute;
@@ -519,7 +505,7 @@ footer li:first-child a {
   font-size: 25px;
 }
 .carte-title svg {
-  width: 2%;
+  width: 7%;
   overflow: visible;
 }
 .carte-title .fa-heart-main path {
@@ -720,7 +706,7 @@ footer li:first-child a {
           animation: FadeInBottom 1.6s both;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   header .logo {
     width: 15%;
   }
@@ -746,13 +732,15 @@ footer li:first-child a {
 
   .section-middle .fct {
     position: relative;
-    left: -54px;
+    left: -100px;
   }
 
   .section-middle .fa-mobile-alt,
 .section-middle .fa-list-ul,
 .section-middle .fa-store {
-    margin-left: 0;
+    margin-left: -40px;
+    position: absolute;
+    left: 110px;
   }
 
   .section-bottom .liste-resto {
@@ -770,7 +758,11 @@ footer li:first-child a {
 
   .nouveau {
     width: 25%;
-    left: 240px;
+    right: 10px;
+  }
+
+  .carte-title svg {
+    width: 3%;
   }
 
   .carte-menu__EPD {
@@ -844,11 +836,22 @@ footer li:first-child a {
     margin-right: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .section-middle .section-middle__fonction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .section-middle .cta-resto, .section-middle .cta-menu, .section-middle .cta-repas {
+    padding: 23px 10px 0 30px;
   }
   .section-middle .cta {
     -webkit-box-pack: center;
@@ -857,11 +860,17 @@ footer li:first-child a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 30%;
   }
   .section-middle .fa-mobile-alt,
 .section-middle .fa-list-ul,
 .section-middle .fa-store {
     margin-left: 0;
+    position: absolute;
+    left: 30px;
+  }
+  .section-middle .fct {
+    left: -14px;
   }
 
   .section-bottom .liste-resto {
@@ -878,7 +887,14 @@ footer li:first-child a {
 
   .nouveau {
     width: 25%;
-    left: 300px;
+  }
+
+  .carte-title svg {
+    width: 3%;
+  }
+
+  .entree, .plats, .desserts {
+    width: 33%;
   }
 
   footer {
